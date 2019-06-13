@@ -47,5 +47,10 @@ class SafaricomHackathonUITests: XCTestCase {
         app.buttons["Done"].tap()
         
     }
+    
+    func testRefreshButtonTap(){
+        XCUIApplication().navigationBars["News"].buttons["Refresh"].tap()
+
+    }
 
 }

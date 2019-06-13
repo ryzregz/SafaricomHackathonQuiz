@@ -35,7 +35,7 @@ class ApiServiceClient{
             url += "\(type)?language=en&country=\(configs.COUNTRY)&apiKey=\(configs.APIKEY)"
             //parameters  = ["apiKey":configs.APIKEY,"country": configs.COUNTRY] as [String : Any]
         }else{
-            url += "\(type)?language=en&country=\(configs.COUNTRY)&apiKey=\(configs.APIKEY)&\(category)"
+            url += "\(type)?language=en&country=\(configs.COUNTRY)&apiKey=\(configs.APIKEY)&category=\(category)"
             //parameters  = ["category":category, "apiKey":configs.APIKEY] as [String : Any]
         }
         let headers: HTTPHeaders = [ "Content-Type" : "application/json" , "Accept" : "application/json"]

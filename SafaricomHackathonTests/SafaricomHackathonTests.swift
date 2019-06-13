@@ -31,11 +31,49 @@ class SafaricomHackathonTests: XCTestCase {
         }
     }
     
-    func testApiDataLoad(){
+    func testNewsApiDataLoad(){
         let ex = expectation(description: "Expecting a response data not nil")
         let category = ""
-        let type = ""
+        let type = "top-headlines"
         ApiServiceClient.client_instance.sendNewsRequest(type:type,category:category,onSuccess: {(r) in
+            XCTAssertNotNil(r)
+            ex.fulfill()
+        }, onError: {(e)
+            in
+            XCTAssertNil(e)
+        })
+        
+        waitForExpectations(timeout: 10) { (error) in
+            if let error = error {
+                XCTFail("error: \(error)")
+            }
+        }
+    }
+    
+    func testNewsApiDataLoadWithCategory(){
+        let ex = expectation(description: "Expecting a response data not nil")
+        let category = "general"
+        let type = "top-headlines"
+        ApiServiceClient.client_instance.sendNewsRequest(type:type,category:category,onSuccess: {(r) in
+            XCTAssertNotNil(r)
+            ex.fulfill()
+        }, onError: {(e)
+            in
+            XCTAssertNil(e)
+        })
+        
+        waitForExpectations(timeout: 10) { (error) in
+            if let error = error {
+                XCTFail("error: \(error)")
+            }
+        }
+    }
+    
+    func testSourcesApiDataLoad(){
+        let ex = expectation(description: "Expecting a response data not nil")
+        let category = ""
+        let type = "sources"
+        ApiServiceClient.client_instance.sendSourcesRequest(type:type,category:category,onSuccess: {(r) in
             XCTAssertNotNil(r)
             ex.fulfill()
         }, onError: {(e)

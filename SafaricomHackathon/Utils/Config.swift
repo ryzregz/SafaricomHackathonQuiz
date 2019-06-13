@@ -14,7 +14,7 @@ class Config{
   public var COUNTRY = ""
     
     
-    var mainColor = UIColor(red: 34/255, green: 139/255, blue: 34/255, alpha: 1.0)
+    var mainColor = UIColor(red: 0/255, green: 128/255, blue: 0/255, alpha: 1.0)
     class var sharedManager: Config {
         struct Static {
             static let instance = Config()
