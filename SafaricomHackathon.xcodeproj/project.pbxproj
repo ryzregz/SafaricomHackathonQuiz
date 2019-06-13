@@ -1,0 +1,856 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CFE1F5422B218EE004731B9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1F5322B218EE004731B9 /* AppDelegate.swift */; };
+		6CFE1F5922B218EE004731B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CFE1F5722B218EE004731B9 /* Main.storyboard */; };
+		6CFE1F5B22B218F0004731B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CFE1F5A22B218F0004731B9 /* Assets.xcassets */; };
+		6CFE1F5E22B218F0004731B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CFE1F5C22B218F0004731B9 /* LaunchScreen.storyboard */; };
+		6CFE1F6922B218F0004731B9 /* SafaricomHackathonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1F6822B218F0004731B9 /* SafaricomHackathonTests.swift */; };
+		6CFE1F7422B218F0004731B9 /* SafaricomHackathonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1F7322B218F0004731B9 /* SafaricomHackathonUITests.swift */; };
+		6CFE1F8822B21A12004731B9 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1F8722B21A12004731B9 /* Config.swift */; };
+		6CFE1F8A22B21A39004731B9 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1F8922B21A39004731B9 /* NewsViewModel.swift */; };
+		6CFE1F8C22B21A6D004731B9 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1F8B22B21A6D004731B9 /* NewsCell.swift */; };
+		6CFE1F8E22B21A81004731B9 /* SourceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1F8D22B21A81004731B9 /* SourceCell.swift */; };
+		6CFE1F9022B21AA7004731B9 /* ApiServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1F8F22B21AA7004731B9 /* ApiServiceClient.swift */; };
+		6CFE1F9222B21ACD004731B9 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1F9122B21ACD004731B9 /* Response.swift */; };
+		6CFE1F9422B21B05004731B9 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1F9322B21B05004731B9 /* Article.swift */; };
+		6CFE1F9622B21B1E004731B9 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1F9522B21B1E004731B9 /* Source.swift */; };
+		6CFE1F9A22B21B73004731B9 /* SourcesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1F9922B21B73004731B9 /* SourcesVC.swift */; };
+		6CFE1F9C22B21B8D004731B9 /* CommonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1F9B22B21B8D004731B9 /* CommonExtensions.swift */; };
+		6CFE1F9E22B21C0E004731B9 /* NewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1F9D22B21C0E004731B9 /* NewsVC.swift */; };
+		6CFE1FA022B21C2E004731B9 /* config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6CFE1F9F22B21C2E004731B9 /* config.plist */; };
+		6CFE1FA222B23716004731B9 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1FA122B23716004731B9 /* CustomButton.swift */; };
+		6CFE1FA422B23BBC004731B9 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1FA322B23BBC004731B9 /* CategoryCell.swift */; };
+		6CFE1FA622B240AD004731B9 /* SweetAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1FA522B240AD004731B9 /* SweetAlert.swift */; };
+		6CFE1FA822B251EC004731B9 /* SourcesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1FA722B251EC004731B9 /* SourcesResponse.swift */; };
+		6CFE1FAA22B26A58004731B9 /* NewsDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1FA922B26A58004731B9 /* NewsDetailsVC.swift */; };
+		6CFE1FAC22B26E82004731B9 /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1FAB22B26E82004731B9 /* Switcher.swift */; };
+		6CFE1FAE22B26FE6004731B9 /* MainTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1FAD22B26FE6004731B9 /* MainTabBarVC.swift */; };
+		8A7905489A3F7E0B6604628D /* Pods_SafaricomHackathonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E864C5456498B4446DED917 /* Pods_SafaricomHackathonTests.framework */; };
+		C27E57E22831E6665295F944 /* Pods_SafaricomHackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DBA2E152B736F63534E404A /* Pods_SafaricomHackathon.framework */; };
+		F6E07C429C9D8D3E9A2176ED /* Pods_SafaricomHackathonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DE4D5B91893D81456802D0 /* Pods_SafaricomHackathonUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CFE1F6522B218F0004731B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CFE1F4822B218EE004731B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CFE1F4F22B218EE004731B9;
+			remoteInfo = SafaricomHackathon;
+		};
+		6CFE1F7022B218F0004731B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CFE1F4822B218EE004731B9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CFE1F4F22B218EE004731B9;
+			remoteInfo = SafaricomHackathon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DBA2E152B736F63534E404A /* Pods_SafaricomHackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafaricomHackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E864C5456498B4446DED917 /* Pods_SafaricomHackathonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafaricomHackathonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42DE4D5B91893D81456802D0 /* Pods_SafaricomHackathonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafaricomHackathonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CD5A6797E25EF6EA122B881 /* Pods-SafaricomHackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafaricomHackathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-SafaricomHackathon/Pods-SafaricomHackathon.release.xcconfig"; sourceTree = "<group>"; };
+		58B2336B75BFFF49B8B7DDB1 /* Pods-SafaricomHackathonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafaricomHackathonUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SafaricomHackathonUITests/Pods-SafaricomHackathonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6CFE1F5022B218EE004731B9 /* SafaricomHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafaricomHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CFE1F5322B218EE004731B9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6CFE1F5822B218EE004731B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6CFE1F5A22B218F0004731B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CFE1F5D22B218F0004731B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6CFE1F5F22B218F0004731B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CFE1F6422B218F0004731B9 /* SafaricomHackathonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafaricomHackathonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CFE1F6822B218F0004731B9 /* SafaricomHackathonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafaricomHackathonTests.swift; sourceTree = "<group>"; };
+		6CFE1F6A22B218F0004731B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CFE1F6F22B218F0004731B9 /* SafaricomHackathonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SafaricomHackathonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CFE1F7322B218F0004731B9 /* SafaricomHackathonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafaricomHackathonUITests.swift; sourceTree = "<group>"; };
+		6CFE1F7522B218F0004731B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CFE1F8722B21A12004731B9 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		6CFE1F8922B21A39004731B9 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		6CFE1F8B22B21A6D004731B9 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		6CFE1F8D22B21A81004731B9 /* SourceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceCell.swift; sourceTree = "<group>"; };
+		6CFE1F8F22B21AA7004731B9 /* ApiServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiServiceClient.swift; sourceTree = "<group>"; };
+		6CFE1F9122B21ACD004731B9 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		6CFE1F9322B21B05004731B9 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		6CFE1F9522B21B1E004731B9 /* Source.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Source.swift; sourceTree = "<group>"; };
+		6CFE1F9922B21B73004731B9 /* SourcesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesVC.swift; sourceTree = "<group>"; };
+		6CFE1F9B22B21B8D004731B9 /* CommonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonExtensions.swift; sourceTree = "<group>"; };
+		6CFE1F9D22B21C0E004731B9 /* NewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsVC.swift; sourceTree = "<group>"; };
+		6CFE1F9F22B21C2E004731B9 /* config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = config.plist; sourceTree = "<group>"; };
+		6CFE1FA122B23716004731B9 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		6CFE1FA322B23BBC004731B9 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		6CFE1FA522B240AD004731B9 /* SweetAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetAlert.swift; sourceTree = "<group>"; };
+		6CFE1FA722B251EC004731B9 /* SourcesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesResponse.swift; sourceTree = "<group>"; };
+		6CFE1FA922B26A58004731B9 /* NewsDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsVC.swift; sourceTree = "<group>"; };
+		6CFE1FAB22B26E82004731B9 /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
+		6CFE1FAD22B26FE6004731B9 /* MainTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarVC.swift; sourceTree = "<group>"; };
+		8C3D01C1AF425E369FCA246E /* Pods-SafaricomHackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafaricomHackathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SafaricomHackathon/Pods-SafaricomHackathon.debug.xcconfig"; sourceTree = "<group>"; };
+		92DB004DB5929853EAB880F6 /* Pods-SafaricomHackathonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafaricomHackathonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SafaricomHackathonTests/Pods-SafaricomHackathonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A8A94ED2612FD2E1832E09E3 /* Pods-SafaricomHackathonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafaricomHackathonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SafaricomHackathonTests/Pods-SafaricomHackathonTests.release.xcconfig"; sourceTree = "<group>"; };
+		CFBAE29B7DD6833410493299 /* Pods-SafaricomHackathonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafaricomHackathonUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SafaricomHackathonUITests/Pods-SafaricomHackathonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CFE1F4D22B218EE004731B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C27E57E22831E6665295F944 /* Pods_SafaricomHackathon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CFE1F6122B218F0004731B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A7905489A3F7E0B6604628D /* Pods_SafaricomHackathonTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CFE1F6C22B218F0004731B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6E07C429C9D8D3E9A2176ED /* Pods_SafaricomHackathonUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CFE1F4722B218EE004731B9 = {
+			isa = PBXGroup;
+			children = (
+				6CFE1F5222B218EE004731B9 /* SafaricomHackathon */,
+				6CFE1F6722B218F0004731B9 /* SafaricomHackathonTests */,
+				6CFE1F7222B218F0004731B9 /* SafaricomHackathonUITests */,
+				6CFE1F5122B218EE004731B9 /* Products */,
+				7FC76E5054D8618C100D7CA5 /* Pods */,
+				AE11F1BD9915EBF0DE5F5B88 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6CFE1F5122B218EE004731B9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CFE1F5022B218EE004731B9 /* SafaricomHackathon.app */,
+				6CFE1F6422B218F0004731B9 /* SafaricomHackathonTests.xctest */,
+				6CFE1F6F22B218F0004731B9 /* SafaricomHackathonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CFE1F5222B218EE004731B9 /* SafaricomHackathon */ = {
+			isa = PBXGroup;
+			children = (
+				6CFE1F8622B219F6004731B9 /* Utils */,
+				6CFE1F8522B219E8004731B9 /* ViewModels */,
+				6CFE1F8422B219DA004731B9 /* ViewCells */,
+				6CFE1F8322B219C5004731B9 /* Api */,
+				6CFE1F8222B219AA004731B9 /* Model */,
+				6CFE1F8122B219A1004731B9 /* Controllers */,
+				6CFE1F5322B218EE004731B9 /* AppDelegate.swift */,
+				6CFE1F5722B218EE004731B9 /* Main.storyboard */,
+				6CFE1F5A22B218F0004731B9 /* Assets.xcassets */,
+				6CFE1F5C22B218F0004731B9 /* LaunchScreen.storyboard */,
+				6CFE1F5F22B218F0004731B9 /* Info.plist */,
+				6CFE1F9F22B21C2E004731B9 /* config.plist */,
+			);
+			path = SafaricomHackathon;
+			sourceTree = "<group>";
+		};
+		6CFE1F6722B218F0004731B9 /* SafaricomHackathonTests */ = {
+			isa = PBXGroup;
+			children = (
+				6CFE1F6822B218F0004731B9 /* SafaricomHackathonTests.swift */,
+				6CFE1F6A22B218F0004731B9 /* Info.plist */,
+			);
+			path = SafaricomHackathonTests;
+			sourceTree = "<group>";
+		};
+		6CFE1F7222B218F0004731B9 /* SafaricomHackathonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6CFE1F7322B218F0004731B9 /* SafaricomHackathonUITests.swift */,
+				6CFE1F7522B218F0004731B9 /* Info.plist */,
+			);
+			path = SafaricomHackathonUITests;
+			sourceTree = "<group>";
+		};
+		6CFE1F8122B219A1004731B9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6CFE1F9922B21B73004731B9 /* SourcesVC.swift */,
+				6CFE1F9D22B21C0E004731B9 /* NewsVC.swift */,
+				6CFE1FA922B26A58004731B9 /* NewsDetailsVC.swift */,
+				6CFE1FAD22B26FE6004731B9 /* MainTabBarVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6CFE1F8222B219AA004731B9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6CFE1F9122B21ACD004731B9 /* Response.swift */,
+				6CFE1F9322B21B05004731B9 /* Article.swift */,
+				6CFE1F9522B21B1E004731B9 /* Source.swift */,
+				6CFE1FA722B251EC004731B9 /* SourcesResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6CFE1F8322B219C5004731B9 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				6CFE1F8F22B21AA7004731B9 /* ApiServiceClient.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		6CFE1F8422B219DA004731B9 /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				6CFE1F8B22B21A6D004731B9 /* NewsCell.swift */,
+				6CFE1F8D22B21A81004731B9 /* SourceCell.swift */,
+				6CFE1FA322B23BBC004731B9 /* CategoryCell.swift */,
+			);
+			path = ViewCells;
+			sourceTree = "<group>";
+		};
+		6CFE1F8522B219E8004731B9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6CFE1F8922B21A39004731B9 /* NewsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6CFE1F8622B219F6004731B9 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6CFE1F8722B21A12004731B9 /* Config.swift */,
+				6CFE1F9B22B21B8D004731B9 /* CommonExtensions.swift */,
+				6CFE1FA122B23716004731B9 /* CustomButton.swift */,
+				6CFE1FA522B240AD004731B9 /* SweetAlert.swift */,
+				6CFE1FAB22B26E82004731B9 /* Switcher.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		7FC76E5054D8618C100D7CA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8C3D01C1AF425E369FCA246E /* Pods-SafaricomHackathon.debug.xcconfig */,
+				4CD5A6797E25EF6EA122B881 /* Pods-SafaricomHackathon.release.xcconfig */,
+				92DB004DB5929853EAB880F6 /* Pods-SafaricomHackathonTests.debug.xcconfig */,
+				A8A94ED2612FD2E1832E09E3 /* Pods-SafaricomHackathonTests.release.xcconfig */,
+				CFBAE29B7DD6833410493299 /* Pods-SafaricomHackathonUITests.debug.xcconfig */,
+				58B2336B75BFFF49B8B7DDB1 /* Pods-SafaricomHackathonUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE11F1BD9915EBF0DE5F5B88 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DBA2E152B736F63534E404A /* Pods_SafaricomHackathon.framework */,
+				3E864C5456498B4446DED917 /* Pods_SafaricomHackathonTests.framework */,
+				42DE4D5B91893D81456802D0 /* Pods_SafaricomHackathonUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CFE1F4F22B218EE004731B9 /* SafaricomHackathon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CFE1F7822B218F0004731B9 /* Build configuration list for PBXNativeTarget "SafaricomHackathon" */;
+			buildPhases = (
+				4B14663038E07244CECD6DB4 /* [CP] Check Pods Manifest.lock */,
+				6CFE1F4C22B218EE004731B9 /* Sources */,
+				6CFE1F4D22B218EE004731B9 /* Frameworks */,
+				6CFE1F4E22B218EE004731B9 /* Resources */,
+				2F40B76DCF696B4C008648C5 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SafaricomHackathon;
+			productName = SafaricomHackathon;
+			productReference = 6CFE1F5022B218EE004731B9 /* SafaricomHackathon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6CFE1F6322B218F0004731B9 /* SafaricomHackathonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CFE1F7B22B218F0004731B9 /* Build configuration list for PBXNativeTarget "SafaricomHackathonTests" */;
+			buildPhases = (
+				081F1042B2CB4140501249B5 /* [CP] Check Pods Manifest.lock */,
+				6CFE1F6022B218F0004731B9 /* Sources */,
+				6CFE1F6122B218F0004731B9 /* Frameworks */,
+				6CFE1F6222B218F0004731B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CFE1F6622B218F0004731B9 /* PBXTargetDependency */,
+			);
+			name = SafaricomHackathonTests;
+			productName = SafaricomHackathonTests;
+			productReference = 6CFE1F6422B218F0004731B9 /* SafaricomHackathonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6CFE1F6E22B218F0004731B9 /* SafaricomHackathonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CFE1F7E22B218F0004731B9 /* Build configuration list for PBXNativeTarget "SafaricomHackathonUITests" */;
+			buildPhases = (
+				6116B8D75042CB725DD44783 /* [CP] Check Pods Manifest.lock */,
+				6CFE1F6B22B218F0004731B9 /* Sources */,
+				6CFE1F6C22B218F0004731B9 /* Frameworks */,
+				6CFE1F6D22B218F0004731B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CFE1F7122B218F0004731B9 /* PBXTargetDependency */,
+			);
+			name = SafaricomHackathonUITests;
+			productName = SafaricomHackathonUITests;
+			productReference = 6CFE1F6F22B218F0004731B9 /* SafaricomHackathonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CFE1F4822B218EE004731B9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Safaricom;
+				TargetAttributes = {
+					6CFE1F4F22B218EE004731B9 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					6CFE1F6322B218F0004731B9 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6CFE1F4F22B218EE004731B9;
+					};
+					6CFE1F6E22B218F0004731B9 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 6CFE1F4F22B218EE004731B9;
+					};
+				};
+			};
+			buildConfigurationList = 6CFE1F4B22B218EE004731B9 /* Build configuration list for PBXProject "SafaricomHackathon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CFE1F4722B218EE004731B9;
+			productRefGroup = 6CFE1F5122B218EE004731B9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CFE1F4F22B218EE004731B9 /* SafaricomHackathon */,
+				6CFE1F6322B218F0004731B9 /* SafaricomHackathonTests */,
+				6CFE1F6E22B218F0004731B9 /* SafaricomHackathonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CFE1F4E22B218EE004731B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CFE1FA022B21C2E004731B9 /* config.plist in Resources */,
+				6CFE1F5E22B218F0004731B9 /* LaunchScreen.storyboard in Resources */,
+				6CFE1F5B22B218F0004731B9 /* Assets.xcassets in Resources */,
+				6CFE1F5922B218EE004731B9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CFE1F6222B218F0004731B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CFE1F6D22B218F0004731B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		081F1042B2CB4140501249B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SafaricomHackathonTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F40B76DCF696B4C008648C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SafaricomHackathon/Pods-SafaricomHackathon-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ProgressHUD/ProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SafaricomHackathon/Pods-SafaricomHackathon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B14663038E07244CECD6DB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SafaricomHackathon-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6116B8D75042CB725DD44783 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SafaricomHackathonUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CFE1F4C22B218EE004731B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CFE1FA222B23716004731B9 /* CustomButton.swift in Sources */,
+				6CFE1F9222B21ACD004731B9 /* Response.swift in Sources */,
+				6CFE1F9422B21B05004731B9 /* Article.swift in Sources */,
+				6CFE1FA822B251EC004731B9 /* SourcesResponse.swift in Sources */,
+				6CFE1FA422B23BBC004731B9 /* CategoryCell.swift in Sources */,
+				6CFE1F9A22B21B73004731B9 /* SourcesVC.swift in Sources */,
+				6CFE1F5422B218EE004731B9 /* AppDelegate.swift in Sources */,
+				6CFE1F8822B21A12004731B9 /* Config.swift in Sources */,
+				6CFE1F9E22B21C0E004731B9 /* NewsVC.swift in Sources */,
+				6CFE1F9022B21AA7004731B9 /* ApiServiceClient.swift in Sources */,
+				6CFE1F8A22B21A39004731B9 /* NewsViewModel.swift in Sources */,
+				6CFE1F8E22B21A81004731B9 /* SourceCell.swift in Sources */,
+				6CFE1FA622B240AD004731B9 /* SweetAlert.swift in Sources */,
+				6CFE1F9622B21B1E004731B9 /* Source.swift in Sources */,
+				6CFE1FAC22B26E82004731B9 /* Switcher.swift in Sources */,
+				6CFE1FAA22B26A58004731B9 /* NewsDetailsVC.swift in Sources */,
+				6CFE1FAE22B26FE6004731B9 /* MainTabBarVC.swift in Sources */,
+				6CFE1F9C22B21B8D004731B9 /* CommonExtensions.swift in Sources */,
+				6CFE1F8C22B21A6D004731B9 /* NewsCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CFE1F6022B218F0004731B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CFE1F6922B218F0004731B9 /* SafaricomHackathonTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CFE1F6B22B218F0004731B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CFE1F7422B218F0004731B9 /* SafaricomHackathonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CFE1F6622B218F0004731B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CFE1F4F22B218EE004731B9 /* SafaricomHackathon */;
+			targetProxy = 6CFE1F6522B218F0004731B9 /* PBXContainerItemProxy */;
+		};
+		6CFE1F7122B218F0004731B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CFE1F4F22B218EE004731B9 /* SafaricomHackathon */;
+			targetProxy = 6CFE1F7022B218F0004731B9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6CFE1F5722B218EE004731B9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CFE1F5822B218EE004731B9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6CFE1F5C22B218F0004731B9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CFE1F5D22B218F0004731B9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CFE1F7622B218F0004731B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6CFE1F7722B218F0004731B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CFE1F7922B218F0004731B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C3D01C1AF425E369FCA246E /* Pods-SafaricomHackathon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CMR5494N46;
+				INFOPLIST_FILE = SafaricomHackathon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.eclectics.churchill.Sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6CFE1F7A22B218F0004731B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CD5A6797E25EF6EA122B881 /* Pods-SafaricomHackathon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CMR5494N46;
+				INFOPLIST_FILE = SafaricomHackathon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.eclectics.churchill.Sample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6CFE1F7C22B218F0004731B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92DB004DB5929853EAB880F6 /* Pods-SafaricomHackathonTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CMR5494N46;
+				INFOPLIST_FILE = SafaricomHackathonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.safaricom.newsapp.SafaricomHackathonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafaricomHackathon.app/SafaricomHackathon";
+			};
+			name = Debug;
+		};
+		6CFE1F7D22B218F0004731B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8A94ED2612FD2E1832E09E3 /* Pods-SafaricomHackathonTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CMR5494N46;
+				INFOPLIST_FILE = SafaricomHackathonTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.safaricom.newsapp.SafaricomHackathonTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SafaricomHackathon.app/SafaricomHackathon";
+			};
+			name = Release;
+		};
+		6CFE1F7F22B218F0004731B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFBAE29B7DD6833410493299 /* Pods-SafaricomHackathonUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CMR5494N46;
+				INFOPLIST_FILE = SafaricomHackathonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.safaricom.newsapp.SafaricomHackathonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SafaricomHackathon;
+			};
+			name = Debug;
+		};
+		6CFE1F8022B218F0004731B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58B2336B75BFFF49B8B7DDB1 /* Pods-SafaricomHackathonUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = CMR5494N46;
+				INFOPLIST_FILE = SafaricomHackathonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.safaricom.newsapp.SafaricomHackathonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SafaricomHackathon;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CFE1F4B22B218EE004731B9 /* Build configuration list for PBXProject "SafaricomHackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CFE1F7622B218F0004731B9 /* Debug */,
+				6CFE1F7722B218F0004731B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CFE1F7822B218F0004731B9 /* Build configuration list for PBXNativeTarget "SafaricomHackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CFE1F7922B218F0004731B9 /* Debug */,
+				6CFE1F7A22B218F0004731B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CFE1F7B22B218F0004731B9 /* Build configuration list for PBXNativeTarget "SafaricomHackathonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CFE1F7C22B218F0004731B9 /* Debug */,
+				6CFE1F7D22B218F0004731B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CFE1F7E22B218F0004731B9 /* Build configuration list for PBXNativeTarget "SafaricomHackathonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CFE1F7F22B218F0004731B9 /* Debug */,
+				6CFE1F8022B218F0004731B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CFE1F4822B218EE004731B9 /* Project object */;
+}

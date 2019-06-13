@@ -1,0 +1,6 @@
+framework module Pods_SafaricomHackathonUITests {
+  umbrella header "Pods-SafaricomHackathonUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
