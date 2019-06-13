@@ -10,7 +10,6 @@ import UIKit
 import ProgressHUD
 class NewsVC: UIViewController {
     @IBOutlet weak var newsTableView : UITableView!
-    @IBOutlet weak var categoryCollectionView : UICollectionView!
     let searchController = UISearchController(searchResultsController: nil)
     
     var sources = [Source]()
@@ -20,11 +19,22 @@ class NewsVC: UIViewController {
     var category = ""
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        //Customize Navigation Bar
+        navigationController?.navigationBar.barTintColor = Config.sharedManager.mainColor
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
 
-        //set up search
+        //set up search bar
+        // Setup the Scope Bar
+        searchController.searchBar.scopeButtonTitles = ["General","Business", "Technology" ,"Entertainment" ,"Science", "Sports"]
+        searchController.searchBar.tintColor = UIColor.white
+        searchController.searchBar.delegate = self
         searchController.searchResultsUpdater = self
         searchController.searchBar.placeholder = "Search Articles"
-        navigationItem.searchController = searchController
+        searchController.searchBar.barTintColor = Config.sharedManager.mainColor
         searchController.dimsBackgroundDuringPresentation = false
         searchController.hidesNavigationBarDuringPresentation = false
         definesPresentationContext = true
@@ -32,10 +42,10 @@ class NewsVC: UIViewController {
         // Do any additional setup after loading the view.
         newsTableView.delegate = self
         newsTableView.dataSource = self
-        categoryCollectionView.delegate = self
-        categoryCollectionView.dataSource = self
+//        categoryCollectionView.delegate = self
+//        categoryCollectionView.dataSource = self
         customDatasource.newsdelegate = self
-        customDatasource.sourcesdelegate = self
+        //customDatasource.sourcesdelegate = self
         
         let refreshButton = UIBarButtonItem(barButtonSystemItem: .refresh, target: self, action: #selector(refresh))
         self.navigationItem.rightBarButtonItem = refreshButton
@@ -93,14 +103,28 @@ extension NewsVC : UITableViewDelegate, UITableViewDataSource{
         return UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return self.searchController.searchBar
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return searchController.searchBar.frame.height
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       let article = articles[indexPath.item]
+        var article : Article?
+        if isFiltering() {
+            article = filteredArtcicles[indexPath.item]
+        }else{
+           article = articles[indexPath.item]
+        }
+       
          let detailsVC = self.storyboard?.instantiateViewController(withIdentifier: "NewsDetails") as! NewsDetailsVC
-        detailsVC.articleName = article.title
-        detailsVC.author = article.author!
-        detailsVC.image_url = article.urlToImage!
-        detailsVC.date = article.publishedAt!
-        detailsVC.desc = "\(article.description!)\n\(String(describing: article.content)) "
+        detailsVC.articleName = article!.title
+        detailsVC.author = article!.author!
+        detailsVC.image_url = article!.urlToImage!
+        detailsVC.date = article!.publishedAt!
+        detailsVC.desc = "\(article!.description!)\n\(String(describing: article!.content)) "
         Switcher.navigateWithNavigationController(viewController: detailsVC)
     }
     
@@ -127,7 +151,7 @@ extension NewsVC:SourcesDelegate{
     func didRecieveSourceResponse(response: [Source]) {
         ProgressHUD.dismiss()
         self.sources = response
-        categoryCollectionView.reloadData()
+        //categoryCollectionView.reloadData()
     }
     
     func didFailUpdateWithError(error: String) {
@@ -161,7 +185,10 @@ extension NewsVC : UISearchResultsUpdating{
 }
 
 extension NewsVC : UISearchBarDelegate{
-    
+    // MARK: - UISearchBar Delegate
+    func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        filterContentForSearchText(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
+    }
 }
 
 extension NewsVC : CategoryDelegate{

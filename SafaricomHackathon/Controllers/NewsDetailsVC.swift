@@ -24,6 +24,8 @@ class NewsDetailsVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //Customize Navigation Bar
+        navigationController?.navigationBar.barTintColor = Config.sharedManager.mainColor
         
         navigationController?.title = articleName
         titleLabel.text = articleName

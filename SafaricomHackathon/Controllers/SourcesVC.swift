@@ -16,6 +16,12 @@ class SourcesVC: UIViewController {
     let customDatasource = NewsViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //Customize Navigation Bar
+         navigationController?.navigationBar.barTintColor = Config.sharedManager.mainColor
+        navigationController?.navigationBar.isTranslucent = false
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
 
         // Do any additional setup after loading the view.
         sourceTableView.delegate = self
@@ -24,10 +30,12 @@ class SourcesVC: UIViewController {
         customDatasource.sourcesdelegate = self
         
         //set up search
+        searchController.searchBar.tintColor = UIColor.white
         searchController.searchResultsUpdater = self
-        searchController.obscuresBackgroundDuringPresentation = false
         searchController.searchBar.placeholder = "Search Sources"
-        navigationItem.searchController = searchController
+        searchController.searchBar.barTintColor = Config.sharedManager.mainColor
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.hidesNavigationBarDuringPresentation = false
         definesPresentationContext = true
         
         ProgressHUD.show()
@@ -100,6 +108,14 @@ extension SourcesVC : UITableViewDelegate, UITableViewDataSource{
             return cell
         }
         return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return self.searchController.searchBar
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return searchController.searchBar.frame.height
     }
     
     

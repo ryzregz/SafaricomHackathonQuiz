@@ -26,9 +26,26 @@ class SafaricomHackathonUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
+    func testTabBarSwitching() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        let tabBarsQuery = app.tabBars
+        tabBarsQuery.buttons["SOURCES"].tap()
+        tabBarsQuery.buttons["ALL NEWS"].tap()
+        
+        
+        
+    }
+    
+    func testOnboarding(){
+        let app = XCUIApplication()
+        let nextButton = app.buttons["Next"]
+        nextButton.tap()
+        nextButton.tap()
+        app.buttons["Done"].tap()
+        
     }
 
 }

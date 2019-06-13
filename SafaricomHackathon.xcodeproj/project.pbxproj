@@ -32,6 +32,8 @@
 		6CFE1FAA22B26A58004731B9 /* NewsDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1FA922B26A58004731B9 /* NewsDetailsVC.swift */; };
 		6CFE1FAC22B26E82004731B9 /* Switcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1FAB22B26E82004731B9 /* Switcher.swift */; };
 		6CFE1FAE22B26FE6004731B9 /* MainTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1FAD22B26FE6004731B9 /* MainTabBarVC.swift */; };
+		6CFE1FB022B2832D004731B9 /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1FAF22B2832D004731B9 /* WalkthroughPageViewController.swift */; };
+		6CFE1FB222B2837C004731B9 /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CFE1FB122B2837C004731B9 /* WalkthroughContentViewController.swift */; };
 		8A7905489A3F7E0B6604628D /* Pods_SafaricomHackathonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E864C5456498B4446DED917 /* Pods_SafaricomHackathonTests.framework */; };
 		C27E57E22831E6665295F944 /* Pods_SafaricomHackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DBA2E152B736F63534E404A /* Pods_SafaricomHackathon.framework */; };
 		F6E07C429C9D8D3E9A2176ED /* Pods_SafaricomHackathonUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DE4D5B91893D81456802D0 /* Pods_SafaricomHackathonUITests.framework */; };
@@ -91,6 +93,8 @@
 		6CFE1FA922B26A58004731B9 /* NewsDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsVC.swift; sourceTree = "<group>"; };
 		6CFE1FAB22B26E82004731B9 /* Switcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Switcher.swift; sourceTree = "<group>"; };
 		6CFE1FAD22B26FE6004731B9 /* MainTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarVC.swift; sourceTree = "<group>"; };
+		6CFE1FAF22B2832D004731B9 /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
+		6CFE1FB122B2837C004731B9 /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
 		8C3D01C1AF425E369FCA246E /* Pods-SafaricomHackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafaricomHackathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SafaricomHackathon/Pods-SafaricomHackathon.debug.xcconfig"; sourceTree = "<group>"; };
 		92DB004DB5929853EAB880F6 /* Pods-SafaricomHackathonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafaricomHackathonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SafaricomHackathonTests/Pods-SafaricomHackathonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A8A94ED2612FD2E1832E09E3 /* Pods-SafaricomHackathonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafaricomHackathonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SafaricomHackathonTests/Pods-SafaricomHackathonTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -191,6 +195,8 @@
 				6CFE1F9D22B21C0E004731B9 /* NewsVC.swift */,
 				6CFE1FA922B26A58004731B9 /* NewsDetailsVC.swift */,
 				6CFE1FAD22B26FE6004731B9 /* MainTabBarVC.swift */,
+				6CFE1FAF22B2832D004731B9 /* WalkthroughPageViewController.swift */,
+				6CFE1FB122B2837C004731B9 /* WalkthroughContentViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -500,12 +506,14 @@
 			files = (
 				6CFE1FA222B23716004731B9 /* CustomButton.swift in Sources */,
 				6CFE1F9222B21ACD004731B9 /* Response.swift in Sources */,
+				6CFE1FB022B2832D004731B9 /* WalkthroughPageViewController.swift in Sources */,
 				6CFE1F9422B21B05004731B9 /* Article.swift in Sources */,
 				6CFE1FA822B251EC004731B9 /* SourcesResponse.swift in Sources */,
 				6CFE1FA422B23BBC004731B9 /* CategoryCell.swift in Sources */,
 				6CFE1F9A22B21B73004731B9 /* SourcesVC.swift in Sources */,
 				6CFE1F5422B218EE004731B9 /* AppDelegate.swift in Sources */,
 				6CFE1F8822B21A12004731B9 /* Config.swift in Sources */,
+				6CFE1FB222B2837C004731B9 /* WalkthroughContentViewController.swift in Sources */,
 				6CFE1F9E22B21C0E004731B9 /* NewsVC.swift in Sources */,
 				6CFE1F9022B21AA7004731B9 /* ApiServiceClient.swift in Sources */,
 				6CFE1F8A22B21A39004731B9 /* NewsViewModel.swift in Sources */,
